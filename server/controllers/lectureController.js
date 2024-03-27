@@ -1,4 +1,3 @@
-//lectureController.js
 const Lecture = require('../models/Lecture');
 const ffmpeg = require('fluent-ffmpeg');
 const path = require('path');
@@ -8,7 +7,6 @@ exports.createLecture = async (req, res) => {
         const { section_id, lecture_title, lecture_description } = req.body;
         const { path: videoPath, filename: videoFilename } = req.file;
 
-        // Use fluent-ffmpeg to get the duration of the video
         ffmpeg.ffprobe(videoPath, async (err, metadata) => {
             if (err) {
                 console.error('Error getting video duration:', err);
@@ -22,13 +20,12 @@ exports.createLecture = async (req, res) => {
                 section_id,
                 lecture_title,
                 lecture_description,
-                video_url: `http://localhost:5000/uploads/${videoFilename}`, // Assuming the videos are served from '/uploads' directory
+                video_url: `http://localhost:5000/uploads/${videoFilename}`, 
                 duration: durationInMinutes
             });
 
             await lecture.save();
 
-            // Return the created lecture data as a response
             res.status(201).json({ success: true, message: 'Lecture created successfully', lecture });
         });
     } catch (error) {

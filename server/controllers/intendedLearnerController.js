@@ -9,7 +9,7 @@ exports.submitIntendedLearner = async (req, res) => {
             user_input: userInput
         });
 
-        res.status(201).json(intendedLearner);// controllers/intendedLearnerController.js
+        res.status(201).json(intendedLearner);
     } catch (error) {
         console.error('Error submitting intended learner data:', error);
         res.status(500).json({ error: 'Failed to submit intended learner data' });

@@ -10,8 +10,8 @@ exports.getAllCourses = async (req, res) => {
             const price = coursePrices.find(price => String(price.savedCourseLandingId) === String(course._id));
             return {
                 _id: course._id,
-                courseId: course.courseId, // Add courseId
-                sectionIds: course.sectionIds, // Add sectionIds
+                courseId: course.courseId,
+                sectionIds: course.sectionIds, 
                 lectureIds: course.lectureIds,
                 courseTitle: course.courseTitle,
                 courseSubtitle: course.courseSubtitle,

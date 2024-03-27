@@ -1,7 +1,5 @@
-// courselandingController.js
 const CourseLanding = require('../models/CourseLanding');
 
-// Controller functions
 const courselandingController = {
     uploadCourseFiles: async (req, res) => {
         // Check if files are present
@@ -12,7 +10,6 @@ const courselandingController = {
         // Save file paths to database or perform other operations
         const { courseImage, promotionalVideo } = req.files;
 
-        // Ensure filenames are defined
         if (!courseImage[0].filename || !promotionalVideo[0].filename) {
             return res.status(400).json({ message: 'File names are undefined' });
         }

@@ -5,12 +5,10 @@ exports.createSection = async (req, res) => {
         const { course_id, section_title, youtube_url, vimeo_url } = req.body;
         let sectionData = { course_id, section_title };
 
-        // Check if a file is uploaded
         if (req.file) {
             sectionData.section_file_path = req.file.path;
         }
 
-        // Add YouTube and Vimeo URLs to section data
         if (youtube_url) {
             sectionData.youtube_url = youtube_url;
         }
