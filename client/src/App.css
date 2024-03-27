@@ -1,0 +1,46 @@
+.container {
+  width: 360px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color:white;
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  grid-row-gap: 8px;
+}
+
+label {
+  font-weight: 2px;
+  color: grey;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #058032;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:  #0bd154;
+}
+.error {
+  color: red;
+  font-size: 0.8em;
+}

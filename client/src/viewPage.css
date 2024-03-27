@@ -1,0 +1,131 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.udemy-image {
+    height: 40px; 
+}
+
+.category {
+    text-decoration: none;
+    color: #007791; 
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.search-bar {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.course-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sections-lectures-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.sections,
+.lectures {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.section-title,
+.lecture-title {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section-list,
+.lecture-list {
+    list-style: none;
+    padding: 0;
+}
+
+.section-item,
+.lecture-item {
+    margin-bottom: 20px;
+}
+
+.video-player,
+.audio-player {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.audio-mode-toggle {
+    margin-top: 20px;
+}
+
+.audio-mode-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-text {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+.course-details-and-video {
+    display: flex;
+    align-items: flex-start; 
+}
+
+
+.course-details-container {
+    background-color: #030303d2;
+    color: #fff;
+    padding: 60px;
+    margin-top: 20px;
+    flex: 1; 
+}
+
+
+.promo-video {
+    width: 30%; 
+    position: fixed;
+    top: 150px; 
+    right: 20px; 
+    z-index: 1000; 
+}
+
+
+/* Course details and video container */
+.course-details-and-video {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+/* Course details container */
+.course-details-container {
+    background-color: #030303d2;
+    color: #fff;
+    padding: 60px;
+    margin-top: 20px;
+    flex: 1; /* Allow course details container to grow */
+}

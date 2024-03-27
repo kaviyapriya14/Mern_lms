@@ -1,0 +1,99 @@
+.header {
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.content-container {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    
+}
+
+.course-category {
+    margin-bottom: 20px;
+    color:rgb(169, 160, 177);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.course-info {
+    margin-bottom: 20px;
+}
+
+.course-title {
+    font-size: 24px;
+    
+}
+
+.course-subtitle {
+    font-size: 18px;
+    
+}
+
+.section-title {
+    font-size: 20px;
+}
+
+.lecture-item,
+.section-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.selected-lecture {
+    margin-top: 20px;
+}
+
+.promotional-video {
+    margin-top: 20px;
+}
+
+.video-container {
+    flex-grow: 1;
+    margin-left: 20px;
+    display: flex;
+  }
+  
+  .video-container video {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .video-container {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  .sections-container{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 0px;
+    width: 80%;
+  }
+
+  
+  .udemy-logo {
+    width: 50px; 
+    height: auto;
+    
+  }
+  
+  .search-bar {
+    width: calc(100% - 60px); 
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  

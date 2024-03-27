@@ -1,0 +1,110 @@
+.hero-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: black;
+    z-index: 1;
+}
+
+.overlay-text h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.overlay-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 0px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+.header {
+    background-color: white;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: black;
+    margin-left: 10px;
+}
+h1::before {
+        content: '\1F393';
+        margin-right: 10px;
+        font-size: 1.5em;
+    }
+
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 8px 30px 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    background-size: 20px;
+}
+.home-button{
+    margin-right: 40px;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.home{
+    width: 100%;
+    padding: 10px;
+    background-color:#c8cac9;
+    color: #0c0c0c;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .home:hover {
+    background-color:  #babcbb;
+  }
+  
+.link{
+    color: #fff;
+    background-color: #c03f08; 
+    padding: 10px 20px; 
+    border-radius: 0; 
+    text-decoration: none; 
+    margin-left: 13px;
+}

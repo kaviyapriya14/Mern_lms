@@ -1,0 +1,42 @@
+.quiz-form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.question-group {
+    margin-bottom: 20px;
+}
+
+.answer-group {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a0a1a2;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #a2a3a4;
+}
+
+input[type="submit"] {
+    background-color: #0ba10b;
+}
+
+input[type="submit"]:hover {
+    background-color: #05c465;
+}

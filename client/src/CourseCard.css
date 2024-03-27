@@ -1,0 +1,48 @@
+/* CourseCard.css */
+
+.course-card {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; 
+    
+  }
+  
+  .course-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .course-details {
+    display:inline; /* Display course details horizontally */
+    flex-direction: column; /* Adjust to column if needed */
+    align-items: flex-start; /* Adjust alignment as needed */
+  }
+  
+  .course-title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-left: 2px;
+  }
+  
+  .course-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .course-price {
+    
+    color: rgb(14, 159, 159);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  

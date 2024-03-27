@@ -1,0 +1,79 @@
+.dashboard-container {
+    text-align: center;
+    margin-top: 20px;
+    background-image: url('homepage.png');
+    background-size: cover; 
+    background-position: center; 
+    height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dashboard-button {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px 20px;
+    background-color: #0b9c4f;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dashboard-button:hover {
+    background-color: #097a1a;
+}
+.footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.header {
+    background-color: white;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 8px 30px 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    background-size: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: black;
+    margin-left: 10px;
+}
+h1::before {
+    content: '\1F393';
+    margin-right: 10px;
+    font-size: 1.5em;
+}

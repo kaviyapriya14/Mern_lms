@@ -1,0 +1,22 @@
+.cart-icon {
+    display: inline-flex; 
+    align-items: center; 
+    position: relative; 
+}
+
+.cart-count {
+    background-color: red;
+    color: white; 
+    border-radius: 50%; 
+    padding: 5px; 
+    font-size: 12px; 
+    position: absolute; 
+    top: -10px; 
+    right: -10px; 
+}
+
+.cart-image {
+    width: 32px; 
+    height: 32px; 
+    
+}

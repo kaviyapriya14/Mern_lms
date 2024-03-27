@@ -1,0 +1,77 @@
+.checkout-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.checkout-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.card-element {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.stripe-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0070ba;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.stripe-button:hover {
+    background-color: #005687;
+}
+
+.paypal-button {
+    margin-top: 20px;
+}
+
+.payment-error,
+.payment-success {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.payment-error {
+    background-color: #ffcccc;
+    color: #c00;
+}
+
+.payment-success {
+    background-color: #ccffcc;
+    color: #008000;
+}

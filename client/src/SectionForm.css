@@ -1,0 +1,169 @@
+.section-form-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #050303;
+    border-radius: 0px;
+    background-color:white;
+    margin-top: 70px;
+    margin-left:50px ;
+}
+
+.form-section {
+    margin-bottom: 15px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-section input[type="text"],
+.form-section textarea,
+.form-section input[type="file"] {
+    width: 95%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #cbcccd;
+    color: #040404;
+    border: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 100px;
+}
+
+button[type="submit"]:hover {
+    background-color: #dbdbdd;
+}
+.description{
+    display: inline-block;
+    width:20%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: black;
+    background-color:white;
+    color: black;
+    margin-left: 350px;
+    
+}
+.description:hover{
+    background-color: grey;
+}
+.lecture{
+    display: inline-block;
+}
+.content{
+    display: inline-block;
+    width:20%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: black;
+    background-color:white;
+    color: black;
+    margin-left: 5px;
+    
+}
+.content:hover{
+    background-color: grey;
+}
+.submit{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 50px;
+
+}
+.curriculum{
+    margin-top: 2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+
+}
+.line{
+    box-shadow :15px 0 10px rgba(0, 0, 0, 0.1);
+    background-color: 'white'
+}
+.para{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+    margin-left: 50px;
+}
+.quiz{
+    display: inline-block;
+    width:15%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: black;
+    background-color:white;
+    color: black;
+    margin-left: 7px;
+  
+}
+.quiz:hover{
+    background-color:grey;
+}
+.curriculum-btn{
+    display: inline-block;
+    width:20%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: black;
+    background-color:white;
+    color: black;
+    margin-left: 5px;
+    
+}
+.curriculum-btn:hover{
+    background-color: grey;
+}
+.addSection{
+    display: inline-block;
+    width:20%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: black;
+    background-color:white;
+    color: black;
+    margin-left: 5px;
+}
+.addSection:hover{
+    background-color: grey;
+}
+.addLecture{
+    display: inline-block;
+    width:20%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: black;
+    background-color:white;
+    color: black;
+    margin-left: 5px;
+}
+.addLecture:hover{
+    background-color: grey;
+}
+.addAnswer,.addQuestion{
+    display: inline-block;
+    width:20%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: black;
+    background-color:white;
+    color: black;
+    margin-left: 5px;
+}
+.addAnswer:hover,.addQuestion:hover{
+    background-color: grey;
+}

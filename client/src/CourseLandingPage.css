@@ -1,0 +1,66 @@
+.course-landing-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.course-landing-page h1 {
+  text-align: left;
+}
+
+.course-landing-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-landing-page label {
+  margin-bottom: 5px;
+}
+
+.course-landing-page input[type="text"],
+.course-landing-page textarea,
+.course-landing-page select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.course-landing-page select {
+  appearance: none;
+  padding-right: 25px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="%23333"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.course-landing-page .dropdown-container {
+  display: flex;
+}
+
+.course-landing-page .dropdown-container > div {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.course-landing-page button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.course-landing-page button:hover {
+  background-color: #0056b3;
+}
+
+.course-landing-page .loading,
+.course-landing-page .error {
+  text-align: left;
+  margin-top: 20px;
+  color: red;
+}

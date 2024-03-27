@@ -1,0 +1,70 @@
+/* Cart.css */
+
+.cart-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-page li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-page li img {
+    width: 120px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+.cart-page li video {
+    width: 120px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+.cart-page li span {
+    margin-right: 10px;
+}
+
+.cart-page button {
+    background-color:purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.cart-page button:hover {
+    background-color: rgb(240, 95, 245);
+}
+Link{
+    color: white;
+}
+.cart-page h2{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-left: 2px;
+}
+.cart-total{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+}

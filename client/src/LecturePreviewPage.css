@@ -1,0 +1,46 @@
+/* LecturePreviewPage.css */
+
+.headerss {
+    background-color: #878585;
+    padding: 5px;
+    text-align: center;
+}
+
+.lecture-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sections-container {
+    width: 20%;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.lecture-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lecture-list li {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.lecture-list li:hover {
+    background-color: #969494;
+}
+
+.video-container {
+    width: 65%;
+}
+
+.video-container video {
+    width: 100%;
+}
