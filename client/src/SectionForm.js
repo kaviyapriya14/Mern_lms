@@ -17,14 +17,13 @@ function SectionForm() {
     const [quizTitle, setQuizTitle] = useState('');
     const [quizDescription, setQuizDescription] = useState('');
     const [questions, setQuestions] = useState([{ title: '', answers: [{ title: '', description: '', isCorrect: false }] }]);
-    const [lectureIds, setLectureIds] = useState([]); // Array to store all lecture IDs
-    const [sectionIds, setSectionIds] = useState([]); // Store created sectionIds
+    const [lectureIds, setLectureIds] = useState([]);
+    const [sectionIds, setSectionIds] = useState([]); 
 
-    // Handler to submit form data
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const createdLectureIds = []; // Array to store lecture IDs for each section
+            const createdLectureIds = []; 
             const createdSectionIds = [];
 
             for (const section of sections) {
@@ -72,7 +71,7 @@ function SectionForm() {
 
             // Create Quiz after creating all sections and lectures
             const quizFormData = {
-                section_ids: createdSectionIds, // Pass sectionIds
+                section_ids: createdSectionIds, 
                 quiz_title: quizTitle,
                 quiz_description: quizDescription,
                 questions: questions.map(question => ({
@@ -88,7 +87,7 @@ function SectionForm() {
             await axios.post('http://localhost:5000/api/quiz', quizFormData);
 
             toast.success('Sections, Lectures, and Quiz created successfully!');
-            setSectionIds(createdSectionIds); // Store sectionIds
+            setSectionIds(createdSectionIds); 
 
             // Redirect to the preview page
             handlePreview(createdLectureIds, createdSectionIds);

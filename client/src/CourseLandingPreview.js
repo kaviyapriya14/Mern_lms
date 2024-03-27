@@ -10,26 +10,21 @@ const CourseLandingPreview = () => {
     const [courseLanding, setCourseLanding] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    // State for course details
     const [course, setCourse] = useState(null);
     const [courseLoading, setCourseLoading] = useState(true);
     const [courseError, setCourseError] = useState(null);
 
-    // State for lectures
     const [lectures, setLectures] = useState([]);
     const [lectureLoading, setLectureLoading] = useState(true);
     const [lectureError, setLectureError] = useState(null);
 
-    // State for sections
     const [sections, setSections] = useState([]);
     const [sectionLoading, setSectionLoading] = useState(true);
     const [sectionError, setSectionError] = useState(null);
 
-    // State for selected lecture
     const [selectedLecture, setSelectedLecture] = useState(null);
 
     useEffect(() => {
-        // Fetch course details
         const fetchCourseDetails = async () => {
             try {
                 const response = await axios.get(`http://localhost:5000/api/course/${courseId}`);
@@ -41,7 +36,6 @@ const CourseLandingPreview = () => {
             }
         };
 
-        // Fetch lectures
         const fetchLecturesDetails = async () => {
             try {
                 const lectureIdsArray = lectureIds.split(',');
@@ -57,7 +51,6 @@ const CourseLandingPreview = () => {
             }
         };
 
-        // Fetch sections
         const fetchSectionDetails = async () => {
             try {
                 const sectionPromises = sectionIds.split(',').map(async (sectionId) => {
@@ -78,23 +71,19 @@ const CourseLandingPreview = () => {
             }
         };
 
-        // Call all fetch functions
         fetchCourseDetails();
         fetchLecturesDetails();
         fetchSectionDetails();
     }, [courseId, lectureIds, sectionIds, savedCourseLandingId]);
 
-    // Handle lecture click
     const handleLectureClick = (lecture) => {
         setSelectedLecture(prevLecture => (prevLecture === lecture ? null : lecture));
     };
 
-    // Render loading states
     if (courseLoading || lectureLoading || sectionLoading) {
         return <div className="loading">Loading...</div>;
     }
 
-    // Render error states
     if (courseError || lectureError || sectionError) {
         return <div className="error">Error: {courseError || lectureError || sectionError}</div>;
     }

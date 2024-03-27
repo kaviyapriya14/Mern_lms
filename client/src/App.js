@@ -17,7 +17,7 @@ import CourseLandingPage from './CourseLandingPage';
 import CourseLandingPreview from './CourseLandingPreview';
 import PriceForm from './Price';
 import Checkout from './Checkout';
-import ViewPage from './viewPage'; // Correct import statement to use PascalCase
+import ViewPage from './viewPage'; 
 
 function App() {
   const [cartItems, setCartItems] = useState([]);

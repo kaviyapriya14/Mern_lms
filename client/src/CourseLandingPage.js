@@ -18,7 +18,7 @@ function CourseLandingPage() {
     const [topic, setTopic] = useState('');
     const [courseImage, setCourseImage] = useState(null);
     const [promotionalVideo, setPromotionalVideo] = useState(null);
-    const [savedCourseLandingId, setSavedCourseLandingId] = useState(null); // Variable to store savedCourseLandingId
+    const [savedCourseLandingId, setSavedCourseLandingId] = useState(null);
 
     useEffect(() => {
         const fetchCourseTitle = async () => {
@@ -63,8 +63,8 @@ function CourseLandingPage() {
                 }
             });
 
-            const savedCourseLandingId = response.data.savedCourseLanding._id; // Store savedCourseLandingId in a variable
-            setSavedCourseLandingId(savedCourseLandingId); // Update state with savedCourseLandingId
+            const savedCourseLandingId = response.data.savedCourseLanding._id;
+            setSavedCourseLandingId(savedCourseLandingId); 
 
             console.log('Saved document ID:', savedCourseLandingId);
             console.log(response.data);

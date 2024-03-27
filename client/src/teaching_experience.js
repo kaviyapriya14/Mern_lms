@@ -17,10 +17,9 @@ function QuestionsWithOptions() {
     const fetchQuestionsWithOptions = async () => {
         try {
             const response = await axios.get('http://localhost:5000/api/questions');
-            // Get only the first four questions
             const firstFourQuestions = response.data.slice(0, 4);
             const initialOptions = firstFourQuestions.reduce((acc, question) => {
-                acc[question._id] = ''; // Initialize selected option for each question
+                acc[question._id] = ''; 
                 return acc;
             }, {});
             setSelectedOptions(initialOptions);
@@ -45,7 +44,6 @@ function QuestionsWithOptions() {
             }
             setCurrentQuestionIndex(prevIndex => prevIndex + 1);
         } else {
-            // Submit the selected options if it's the last question
             handleSubmit();
         }
     };

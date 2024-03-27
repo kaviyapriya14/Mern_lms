@@ -47,7 +47,7 @@ function IntendedLearner() {
             });
 
             toast.success('User responses submitted successfully!');
-            setSelectedNavItem('curriculum'); // Change selectedNavItem to 'curriculum'
+            setSelectedNavItem('curriculum');
         } catch (error) {
             console.error('Error submitting user responses:', error);
             toast.error('Failed to submit user responses');

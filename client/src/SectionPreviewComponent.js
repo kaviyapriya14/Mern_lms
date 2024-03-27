@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./SectionPreviewComponent.css"
 
-const SectionPreviewComponent = ({ sectionIds }) => { // Receiving sectionIds as prop
+const SectionPreviewComponent = ({ sectionIds }) => { 
     const [sections, setSections] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);

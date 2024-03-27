@@ -4,17 +4,15 @@ import './CourseCard.css';
 
 const CourseCard = ({ course, addToCart }) => {
     const handleAddToCart = () => {
-        addToCart(course); // Call addToCart function with the course as parameter 
+        addToCart(course); 
     };
 
     const handleClick = () => {
-        // Navigate to the view page with the course details
         console.log(`Navigating to view page for course: ${course.courseTitle}`);
-// Handle navigation logic here
     };
 
     return (
-        <Link to={`/courses/${course._id}`} className="course-card-link"> {/* Navigate to view page with course ID */}
+        <Link to={`/courses/${course._id}`} className="course-card-link"> 
             <div className="course-card" onClick={handleClick}>
                 <img src={course.courseImage} alt={course.courseTitle} className="course-image" />
                 <div className="course-details">

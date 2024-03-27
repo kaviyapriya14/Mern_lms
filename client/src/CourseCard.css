@@ -20,9 +20,9 @@
   }
   
   .course-details {
-    display:inline; /* Display course details horizontally */
-    flex-direction: column; /* Adjust to column if needed */
-    align-items: flex-start; /* Adjust alignment as needed */
+    display:inline; 
+    flex-direction: column; 
+    align-items: flex-start; 
   }
   
   .course-title {

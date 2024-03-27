@@ -40,14 +40,12 @@ const ViewPage = () => {
 
         fetchCourseDetails();
     }, [id]);
-    // Function to extract YouTube video ID from URL
     const getYoutubeVideoId = (url) => {
         const videoIdRegex = /[?&]v=([^#\&\?]+)/;
         const match = url.match(videoIdRegex);
         return match && match[1] ? match[1] : '';
     };
 
-    // Function to extract Vimeo video ID from URL
     const getVimeoVideoId = (url) => {
         const videoIdRegex = /vimeo.com\/(\d+)/;
         const match = url.match(videoIdRegex);
@@ -120,7 +118,6 @@ const ViewPage = () => {
                                         allowFullScreen
                                     ></iframe>
                                 )}
-                                {/* Render Vimeo video */}
                                 {section.vimeo_url && (
                                     <iframe
                                         src={`https://player.vimeo.com/video/${getVimeoVideoId(section.vimeo_url)}`}

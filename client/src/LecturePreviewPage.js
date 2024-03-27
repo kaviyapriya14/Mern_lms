@@ -72,23 +72,19 @@ const LecturePreviewPage = () => {
             }
         };
 
-        // Call all fetch functions
         fetchCourseDetails();
         fetchLecturesDetails();
         fetchSectionDetails();
     }, [courseId, lectureIds, sectionIds]);
 
-    // Handle lecture click
     const handleLectureClick = (lecture) => {
         setSelectedLecture(prevLecture => (prevLecture === lecture ? null : lecture));
     };
 
-    // Render loading states
     if (courseLoading || lectureLoading || sectionLoading) {
         return <div>Loading...</div>;
     }
 
-    // Render error states
     if (courseError || lectureError || sectionError) {
         return <div>Error: {courseError || lectureError || sectionError}</div>;
     }
